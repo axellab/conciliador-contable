@@ -1,0 +1,14 @@
+DATOS DE LA EMPRESA (cliente del estudio)
+
+Razón social: LA ESPIGA DORADA SRL
+CUIT: 30-71583246-8
+Condición frente al IVA: Responsable Inscripto
+Actividad: Elaboración de productos de panadería y pastelería
+Domicilio: Av. Rivadavia 14.520 - Ramos Mejía, Buenos Aires
+Banco: Banco de la Ribera S.A. - Cuenta corriente en pesos N° 0123-004567/8
+Período a procesar: septiembre 2026 (09/2026)
+Contacto administrativo: Carla Benítez (administracion@laespigadorada.example)
+
+Nota del cliente: "Te mando todo lo de septiembre: facturas de proveedores y el extracto del banco."
+
+DOCUMENTO FICTICIO GENERADO PARA DEMOSTRACIÓN - SIN VALIDEZ FISCAL

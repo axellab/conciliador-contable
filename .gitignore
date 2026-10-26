@@ -1,0 +1,13 @@
+# Material personal del presentador (no se publica)
+*.pptx
+GUION_DEMO.md
+QR_*.png
+QR_*.svg
+
+# Python
+__pycache__/
+*.pyc
+
+# Carpetas de trabajo de pruebas
+trabajo/
+salida/

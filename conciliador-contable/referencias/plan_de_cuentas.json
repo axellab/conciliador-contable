@@ -1,0 +1,43 @@
+{
+  "nota": "Plan de cuentas de ejemplo para una pyme. Adaptalo a tu cliente: podés cambiar códigos, nombres y palabras clave. Las palabras clave sirven para sugerir la cuenta de cada factura (se buscan en la razón social del proveedor y en el detalle).",
+  "cuentas_especiales": {
+    "banco": "1.1.2.01",
+    "proveedores": "2.1.1.01",
+    "iva_credito_fiscal": "1.1.4.01",
+    "otros_tributos": "1.1.4.04",
+    "pagos_a_documentar": "1.1.5.01",
+    "cobranzas_a_imputar": "1.1.3.09"
+  },
+  "cuentas": [
+    {"codigo": "1.1.2.01", "nombre": "Banco cuenta corriente"},
+    {"codigo": "1.1.3.09", "nombre": "Cobranzas a imputar"},
+    {"codigo": "1.1.4.01", "nombre": "IVA Crédito Fiscal"},
+    {"codigo": "1.1.4.02", "nombre": "Percepciones de IVA sufridas"},
+    {"codigo": "1.1.4.03", "nombre": "Retenciones de IIBB sufridas (SIRCREB)"},
+    {"codigo": "1.1.4.04", "nombre": "Percepciones de IIBB sufridas"},
+    {"codigo": "1.1.5.01", "nombre": "Pagos a documentar"},
+    {"codigo": "2.1.1.01", "nombre": "Proveedores"},
+    {"codigo": "5.1.01", "nombre": "Compras de materias primas e insumos",
+     "palabras_clave": ["harina", "levadura", "margarina", "azucar", "manteca", "huevo", "leche", "crema", "chocolate", "dulce de leche", "molino", "materia prima", "insumo"]},
+    {"codigo": "5.1.02", "nombre": "Envases y embalajes",
+     "palabras_clave": ["envase", "embalaje", "packaging", "bolsa", "caja", "kraft", "bandeja", "film"]},
+    {"codigo": "5.2.01", "nombre": "Energía eléctrica y gas",
+     "palabras_clave": ["energia", "electrica", "electricidad", "kwh", "gas natural", "luz"]},
+    {"codigo": "5.2.02", "nombre": "Telefonía e internet",
+     "palabras_clave": ["internet", "telefonia", "telefono", "fibra optica", "telecomunicaciones", "celular", "movil"]},
+    {"codigo": "5.2.03", "nombre": "Alquileres",
+     "palabras_clave": ["alquiler", "locacion", "arrendamiento"]},
+    {"codigo": "5.2.04", "nombre": "Honorarios profesionales",
+     "palabras_clave": ["honorario", "asesoramiento", "consultoria", "contable", "auditoria", "abogado", "escribania"]},
+    {"codigo": "5.2.05", "nombre": "Fletes y acarreos",
+     "palabras_clave": ["flete", "transporte", "logistica", "acarreo", "distribucion", "envio", "mensajeria"]},
+    {"codigo": "5.2.06", "nombre": "Limpieza e higiene",
+     "palabras_clave": ["limpieza", "detergente", "lavandina", "desinfectante", "higiene"]},
+    {"codigo": "5.2.07", "nombre": "Mantenimiento y reparaciones",
+     "palabras_clave": ["reparacion", "mantenimiento", "service", "repuesto", "horno", "tecnico"]},
+    {"codigo": "5.2.08", "nombre": "Publicidad y propaganda",
+     "palabras_clave": ["publicidad", "publicitario", "folleto", "grafica", "imprenta", "cartel", "banner", "marketing"]},
+    {"codigo": "5.3.01", "nombre": "Gastos bancarios"},
+    {"codigo": "5.3.02", "nombre": "Impuesto a los débitos y créditos bancarios"}
+  ]
+}

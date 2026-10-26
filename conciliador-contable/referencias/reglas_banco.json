@@ -1,0 +1,12 @@
+{
+  "nota": "Reglas para clasificar movimientos bancarios que no tienen factura. Se aplican en orden y gana la primera que coincide. 'patron' es una expresión regular que se busca en el concepto + referencia (en mayúsculas y sin acentos). 'solo' limita la regla a débitos o créditos. 'cuenta' es un código del plan de cuentas.",
+  "reglas": [
+    {"patron": "PERCEPCION.*IVA|PERC\\.? ?IVA|RG ?2408", "categoria": "Percepción de IVA bancaria", "cuenta": "1.1.4.02", "solo": "debito"},
+    {"patron": "IVA.*COMIS|IVA ?21", "categoria": "IVA sobre comisiones bancarias", "cuenta": "1.1.4.01", "solo": "debito"},
+    {"patron": "SIRCREB|RET.*IIBB|RETENCION.*INGRESOS BRUTOS", "categoria": "Retención de IIBB (SIRCREB)", "cuenta": "1.1.4.03", "solo": "debito"},
+    {"patron": "25 ?413|IMP.* S ?DEB|IMP.* S ?CRED|IMPUESTO.*(DEBITOS|CREDITOS|CHEQUE)", "categoria": "Impuesto a los débitos y créditos (Ley 25.413)", "cuenta": "5.3.02", "solo": "debito"},
+    {"patron": "COMISION|MANTENIMIENTO (DE )?CUENTA|GASTOS? BANCARIOS?|SEGURO|CARGO POR", "categoria": "Comisiones y gastos bancarios", "cuenta": "5.3.01", "solo": "debito"},
+    {"patron": "DEPOSITO.*EFECTIVO|DEP\\.? ?EFVO", "categoria": "Depósito en efectivo: confirmar origen", "cuenta": "1.1.3.09", "solo": "credito"},
+    {"patron": "ACREDITACION|PAYWAY|POSNET|MERCADO ?PAGO|LIQ|TRANSF.*RECIBIDA|DEPOSITO|CREDITO", "categoria": "Cobro a imputar (cruzar con ventas)", "cuenta": "1.1.3.09", "solo": "credito"}
+  ]
+}
